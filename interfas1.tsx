@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { AntDesign,FontAwesome5,MaterialCommunityIcons, MaterialIcons, Entypo, Ionicons } from '@expo/vector-icons';
+import Comentarios from './Comentarios';
 
 export default function Interfas1() {
   return (
@@ -19,7 +20,9 @@ export default function Interfas1() {
             <View>
             <Ionicons style={styles.emoji1} name="send-outline" size={24} color="#fff" />
             </View>
-          </TouchableOpacity> 
+          </TouchableOpacity>
+          <Text style={styles.textEncabezados}>87 Comments</Text> 
+          <Comentarios/>
       <View style={styles.footer}>
       <MaterialCommunityIcons style={styles.footerIcon} name="home-variant" size={25} color="#AEA8B3" />
       <MaterialCommunityIcons style={styles.footerIcon} name="text-box" size={24} color="#AEA8B3" />
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
         
     },
     user:{
-        margin: 17,
+        margin: '5%',
         padding: 8,
         borderRadius: 10,
         borderColor: '#4D596D',
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#4B576B',
         top: 15,
-        width: 280,
+        width: 300,
         height: 40,
         margin: 5,
         padding: 8,
@@ -68,8 +71,8 @@ const styles = StyleSheet.create({
       position: 'absolute',
       height: 33,
       width: 33,
-      top: 23,
-      left: 260,
+      top: 24,
+      left: '80%',
       justifyContent: 'center',
       alignContent: 'center',
       borderRadius: 3,
@@ -81,14 +84,16 @@ const styles = StyleSheet.create({
     },
     textEncabezados:{
         color: '#fff',
+        left: '5.5%',
+        fontSize: 20,
     },
     bottomInput2:{
       flex: 1,
       position: 'absolute',
       height: 33,
       width: 33,
-      top: 23,
-      left: 300,
+      top: 24,
+      left: '89%',
       justifyContent: 'center',
       alignContent: 'center',
       borderRadius: 3,
@@ -97,7 +102,7 @@ const styles = StyleSheet.create({
     footer:{
         flex: 1,
         position: 'absolute',
-        top: 480,
+        top: '83%',
         backgroundColor: '#293441',
         flexDirection: 'row',
         justifyContent: 'center',
